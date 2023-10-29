@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include Bootstrap CSS and JavaScript -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notify</title>
+    <style>
+        body {
+            font-family: "Georgia, Times, Times New Roman, serif";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-size: cover;
+            overflow: auto; /* Added a scrollbar */
+        }
+
+        .top-stripe {
+            background-color: #007bff;
+            height: 20%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center content */
+            align-items: center; /* Horizontally center content */
+            padding: 0 10px;
+            z-index: 1;
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            max-width: 30%; /* Adjust the size of the logo */
+        }
+
+        .center-text {
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #007bff;
+        }
+
+
+        /* Add custom style to the "NOTIFICATION" badge */
+        .notification-badge {
+            font-size: 18px;
+            background-color: #cf1a38;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 10px;
+        }
+        
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .center-text {
+                font-size: 24px; /* Reduce the font size for smaller screens */
+                padding: 10px; /* Reduce the padding for smaller screens */
+            }
+        }
+
+        /* Keyframes for slide-in animation */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-10%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Custom styles for the notifications table */
+        .notification-cell {
+            animation: slideIn 0.5s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-stripe">
+        <img src="https://i.postimg.cc/fRfqBC7j/drdo-logo-0-1.png" alt="Your Logo" class="logo">
+        <div class="center-text">Centre For Air Borne System</div>
+    </div>
+<br><br><br><br><br><br><br><br>
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">
+            <span class="notification-badge">NOTIFICATION</span>
+        </h2>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="alert alert-info notification-cell">
+                            <strong>New message received</strong><br>
+                            You have a new message in your inbox. Click <a href="#">here</a> to read it.
+                            <span class="float-right">Oct 29, 2023</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="alert alert-warning notification-cell">
+                            <strong>Meeting reminder</strong><br>
+                            Reminder: You have a meeting tomorrow at 10:00 AM.
+                            <span class="float-right">Oct 30, 2023</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="alert alert-info notification-cell">
+                            <strong>New message received</strong><br>
+                            You have a new message in your inbox. Click <a href="#">here</a> to read it.
+                            <span class="float-right">Oct 29, 2023</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="alert alert-warning notification-cell">
+                            <strong>Meeting reminder</strong><br>
+                            Reminder: You have a meeting tomorrow at 10:00 AM.
+                            <span class="float-right">Oct 30, 2023</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="alert alert-info notification-cell">
+                            <strong>New message received</strong><br>
+                            You have a new message in your inbox. Click <a href="#">here</a> to read it.
+                            <span class="float-right">Oct 29, 2023</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="alert alert-warning notification-cell">
+                            <strong>Meeting reminder</strong><br>
+                            Reminder: You have a meeting tomorrow at 10:00 AM.
+                            <span class="float-right">Oct 30, 2023</span>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Add more notification rows with alerts as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
