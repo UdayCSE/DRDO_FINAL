@@ -1,0 +1,47 @@
+
+@media print {
+        .print-content {
+            page-break-before: auto; /* Avoid page break before this container */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 6px;
+            text-align: left;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
